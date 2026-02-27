@@ -2,6 +2,11 @@ const express = require("express");
 
 const app = express();
 
-app.listen(8080, () => {
+app.get("/", (req, res) => {
+    console.log(req.query);
+    res.json({txt: "hello"})
+})
+
+app.listen(8181, () => {
     console.log("Solaris");
 });
