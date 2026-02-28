@@ -4,7 +4,7 @@ const app = express();
 
 app.get("/", (req, res) => {
     console.log(req.query);
-    res.json({txt: "hello test branch"})
+    res.json({txt: "hello test branch 2"})
 })
 
 app.listen(8181, () => {
